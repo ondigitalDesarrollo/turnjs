@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Prototipo Revista Irotama</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <div class="container">
+        <section id="magazine">
+            <!-- Portada -->
+            <div class="portada">
+                <div id="titulo" class="portada--titulo">
+                    Inicio de la revista
+                </div>
+            </div>
+            <!-- Contenido -->
+            <div class="contenido">
+                <div class="contenido--texto">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem dolor alias rem unde accusamus corporis fuga. Dolor consequatur vitae enim maxime eius in culpa. Iure, ipsa corporis! Eius, dolorem, voluptate.
+                </div>
+            </div>
+            <div class="contenido">
+                <div class="contenido--texto">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur nesciunt et, animi corporis nam placeat laudantium! Illum eaque, accusantium quia. Sint itaque expedita atque eveniet ut, aspernatur incidunt voluptates ad.
+                    <figure>
+                        <img src="" alt="">
+                    </figure>
+                </div>
+            </div>
+            <!-- Contraportada -->
+            <div class="contraportada">
+                <div class="contraportada--titulo">
+                    Fin de la Revista
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- jquery -->
+    <script src="js/jquery.min.1.7.js"></script>
+    <!-- turn -->
+    <script src="js/turn.js"></script>
+    <!-- Constructor -->
+    <script>
+        $(document).ready(function() {
+            $("#magazine").turn();
+        });
+    </script>
+</body>
+
+</html>
