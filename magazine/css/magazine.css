@@ -417,47 +417,4 @@ body{
 }
 
 
-/* 7. Irotama Styles */
-.header{
-	overflow: hidden;
-	padding: 20px 26%;
-	background-color: black;
-	box-shadow: 0px 3px 8px 1px rgba(120,120,120,1);
-	display: flex;
-	-ms-align-items: center;
-	align-items: center;
-	justify-content: space-between;
-	z-index: 99;
-	color: white;
-}
 
-.logo img{
-	width: 80%;
-	height: auto;
-}
-.title h1{
-	font-size: 2rem;
-	color: #fff !important;
-	z-index: 100;
-}
-
-.footer{
-	display: flex;
-	height: 80px;
-	padding: 20px 26%;
-	bottom: 0;
-	color: #fff;
-	background-color: #000;
-	font-weight: lighter;
-}
-.group__title, .group__title a, .group__subtitle, .group__subtitle a {
-	color: #fff;
-	font-size: .8rem;
-	text-decoration: none;
-}
-.group__title a:hover{
-	color: #8aab05 !important;
-}
-.group__subtitle a:hover{
-	color: #ff5722 !important;
-}

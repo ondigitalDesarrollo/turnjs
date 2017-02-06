@@ -6,6 +6,7 @@
 <!--[if !IE]><!-->
 <html lang="es">
 <!--<![endif]-->
+
 <head>
     <title>Irotama Revista Prototipo</title>
     <meta name="viewport" content="width = 1050, user-scalable = no" />
@@ -13,6 +14,60 @@
     <script type="text/javascript" src="lib/modernizr.2.5.3.min.js"></script>
     <script type="text/javascript" src="lib/hash.js"></script>
     <link rel="stylesheet" href="css/magazine.css">
+    <style>
+    /* 7. Irotama Styles */
+    
+    .header {
+        overflow: hidden;
+        padding: 20px 26%;
+        background-color: black;
+        box-shadow: 0px 3px 8px 1px rgba(120, 120, 120, 1);
+        display: flex;
+        -ms-align-items: center;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 99;
+        color: white;
+    }
+    
+    .logo img {
+        width: 80%;
+        height: auto;
+    }
+    
+    .title h1 {
+        font-size: 2rem;
+        color: #fff !important;
+        z-index: 100;
+    }
+    
+    .footer {
+        display: flex;
+        height: 80px;
+        padding: 20px 26%;
+        bottom: 0;
+        color: #fff;
+        background-color: #000;
+        font-weight: lighter;
+    }
+    
+    .group__title,
+    .group__title a,
+    .group__subtitle,
+    .group__subtitle a {
+        color: #fff;
+        font-size: .8rem;
+        text-decoration: none;
+    }
+    
+    .group__title a:hover {
+        color: #8aab05 !important;
+    }
+    
+    .group__subtitle a:hover {
+        color: #ff5722 !important;
+    }
+    </style>
 </head>
 
 <body>
@@ -476,11 +531,12 @@
                 complete: loadApp
             });
             </script>
-        <footer class="footer">
-            <hgroup class="footer--grupo">
-                <h2 class="group__title">Desarrollado por:  <a href="http://ondigital.co" target="_blank">AGENCIA DE  MARKETING DIGITAL</a></h2>
-                <h3 class="group__subtitle">Prototipo para:  <a href="http://irotama.com" taget="_blank">IROTAMA HOTELES</a></h3>
-            </hgroup>
-        </footer>
+            <footer class="footer">
+                <hgroup class="footer--grupo">
+                    <h2 class="group__title">Desarrollado por:  <a href="http://ondigital.co" target="_blank">AGENCIA DE  MARKETING DIGITAL</a></h2>
+                    <h3 class="group__subtitle">Prototipo para:  <a href="http://irotama.com" taget="_blank">IROTAMA HOTELES</a></h3>
+                </hgroup>
+            </footer>
 </body>
+
 </html>
