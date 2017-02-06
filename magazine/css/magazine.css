@@ -21,7 +21,6 @@
 /* 1. Layout Básico */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 body{
-	/*overflow:hidden;*/
 	background-color:#fcfcfc;
 	margin:0;
 	padding:0;
