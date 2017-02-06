@@ -1,10 +1,10 @@
 <!doctype html>
-<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if lt IE 7 ]> <html lang="es" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="es" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="es" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="es" class="ie9"> <![endif]-->
 <!--[if !IE]><!-->
-<html lang="en">
+<html lang="es">
 <!--<![endif]-->
 <head>
     <title>Irotama Revista Prototipo</title>
@@ -15,6 +15,14 @@
 </head>
 
 <body>
+    <header class="header" id="header">
+        <div class="logo">
+            <img src="img/logo-irotama.png" height="78" width="253" alt="Logo Irotama">
+        </div>
+        <div class="title">
+            <h1>Revista Mensual</h1>
+        </div>
+    </header>
     <div id="canvas">
         <div class="zoom-icon zoom-icon-in"></div>
         <div class="magazine-viewport">
@@ -210,6 +218,7 @@
 
                             $('.thumbnails').hide();
                             $('.made').hide();
+                            $('#header').fadeOut();
                             $('.magazine').removeClass('animated').addClass('zoom-in');
                             $('.zoom-icon').removeClass('zoom-icon-in').addClass('zoom-icon-out');
 
@@ -223,7 +232,7 @@
                                 appendTo($('body')).
                                 delay(2000).
                                 animate({
-                                    opacity: 0
+                                    opacity: 10
                                 }, 500, function() {
                                     $(this).remove();
                                 });
@@ -234,6 +243,7 @@
 
                             $('.exit-message').hide();
                             $('.thumbnails').fadeIn();
+                            $('#header').fadeIn();
                             $('.made').fadeIn();
                             $('.zoom-icon').removeClass('zoom-icon-out').addClass('zoom-icon-in');
 
@@ -465,6 +475,11 @@
                 complete: loadApp
             });
             </script>
+        <footer class="footer">
+            <hgroup class="footer--grupo">
+                <h2 class="group__title">Desarrollado por:  <a href="http://ondigital.co" target="_blank">AGENCIA DE  MARKETING DIGITAL</a></h2>
+                <h3 class="group__subtitle">Prototipo para:  <a href="http://irotama.com" taget="_blank">IROTAMA HOTELES</a></h3>
+            </hgroup>
+        </footer>
 </body>
-
 </html>
